@@ -40,11 +40,9 @@ public class Doctor implements Serializable{
     
     @Column (length = 45)
     private String name;
-    
-    private int year;
-    
     @Column (length = 45)
     private String department;
+    private int year; 
     
     private String description;
   
