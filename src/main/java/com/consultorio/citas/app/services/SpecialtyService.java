@@ -54,7 +54,6 @@ public class SpecialtyService {
                 if(specialty.getName()!=null){
                     resultado.get().setName(specialty.getName());
                 }
-                
                 if(specialty.getDescription()!=null){
                     resultado.get().setDescription(specialty.getDescription());
                 }
