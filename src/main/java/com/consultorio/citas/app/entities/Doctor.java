@@ -47,6 +47,8 @@ public class Doctor implements Serializable{
     private String description;
   
     
+    
+    
    @ManyToOne
     @JoinColumn (name = "specialtyId")
     @JsonIgnoreProperties ("doctors")
