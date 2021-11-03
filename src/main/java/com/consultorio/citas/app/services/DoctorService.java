@@ -54,6 +54,9 @@ public class DoctorService {
                 if(doctor.getName()!=null){
                     resultado.get().setName(doctor.getName());
                 }
+                if(doctor.getDepartment()!=null){
+                    resultado.get().setDepartment(doctor.getDepartment());
+                }
                 if(doctor.getDescription()!=null){
                     resultado.get().setDescription(doctor.getDescription());
                 }
