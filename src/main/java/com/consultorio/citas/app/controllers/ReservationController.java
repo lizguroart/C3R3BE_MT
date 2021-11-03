@@ -5,8 +5,10 @@
  */
 package com.consultorio.citas.app.controllers;
 
+import com.consultorio.citas.app.entities.CountClients;
 import com.consultorio.citas.app.entities.Reservation;
 import com.consultorio.citas.app.services.ReservationService;
+import com.retoLibrary.Library.entities.CountScore;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -61,5 +63,16 @@ public class ReservationController {
     {
         return service.delete(reservationId);
     }
-    
+        
+    @GetMapping("/report-status")
+    public CountScore getReservationStatus()
+    {
+        return service.getStatusScore();
+    }
+        
+    @GetMapping("/report-clients")
+    public List<CountClients> gerReport()
+    {
+        return service.getTopByClient();
+    }
 }
